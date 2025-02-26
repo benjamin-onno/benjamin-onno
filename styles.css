@@ -7,8 +7,8 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: whitesmoke; /* Change as needed */
-    font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+    background-color: white; /* Change as needed */
+    font-family: "Futura";
     text-align: center;
 }
 
