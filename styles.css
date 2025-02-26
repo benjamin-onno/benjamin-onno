@@ -1,0 +1,106 @@
+/* General Page Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke; /* Change as needed */
+    font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+    text-align: center;
+}
+
+/* Main Container */
+.container {
+    width: 90vw; /* Scales with window size */
+    height: 90vh; /* Scales with window size */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Logo Styling */
+.logo {
+    width: 50%; /* Matches the width of the central photo */
+    max-width: 300px; /* Adjust as needed */
+    height: auto; /* Keeps aspect ratio */
+    position: absolute;
+    top: 2vh;
+}
+
+/* Photo & Text Blocks */
+.photo-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw; /* Adjust as needed */
+    max-width: 400px;
+}
+
+/* Centered Photo */
+.photo {
+    width: 100%; /* Adjusts dynamically */
+    max-width: 300px;
+    height: auto;
+    display: block;
+}
+
+/* Overlay Image */
+.overlay {
+    position: absolute; /* Places it on top of the central image */
+    top: 50%; /* Aligns to the center */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers it perfectly */
+    width: 100%; /* Same width as the central image */
+    height: auto; /* Adjusts height automatically */
+    pointer-events: none; /* Makes sure it doesn't block interactions */
+}
+
+/* Text Blocks - Independent Positioning */
+.text-block {
+    position: absolute;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    white-space: nowrap; /* Prevents text from breaking into multiple lines */
+    font-size: 1.2vw; /* Scales text size with window */
+}
+
+/* Individual Styling for Each Text Block */
+.text-top {
+    top: -10%; /* Moves text to align above the image */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 35px;
+}
+
+.text-left {
+    right: 100%; /* Aligns right edge of text with left edge of image */
+    top: 50%;
+    transform: translateY(80%);
+    text-align: right;
+    padding-right: 20px; /* Adds spacing from the image */
+    font-size: 15px;
+}
+
+.text-right {
+    left: 100%; /* Aligns left edge of text with right edge of image */
+    top: 50%;
+    transform: translateY(80%);
+    text-align: left;
+    padding-left: 20px; /* Adds spacing from the image */
+    font-size: 15px;
+}
+
+.text-bottom {
+    bottom: -150px; /* Moves text to align below the image */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 35px;
+}
